@@ -9,13 +9,20 @@ p {
     padding: 0;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* Set a base font size and color */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f8f8f8;
     color: #333;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header styles */
@@ -28,6 +35,16 @@ header {
 h1 {
     color: #fff;
     margin: 0;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    flex-shrink: 0;
+    height: 50px;
 }
 
 /* Nav Bar */
@@ -91,9 +108,3 @@ a {
     text-decoration: none;
 }
 
-/* Footer styles */
-footer {
-    background-color: #f8f9fa;
-    padding: 10px;
-    text-align: center;
-}
