@@ -108,3 +108,75 @@ a {
     text-decoration: none;
 }
 
+
+/* Family Tree CSS */
+/* style the nodes and connectors */
+.node {
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.node h2,
+.node h3,
+.node h4,
+.node h5 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #555;
+}
+
+.connector {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 2px solid #555;
+    border-right: 2px solid #555;
+    border-bottom: 2px solid #555;
+    transform: translateX(-50%);
+}
+
+/* style the branches */
+.branch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 50%;
+    background-color: #555;
+    transform-origin: top;
+}
+
+.branch:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* style the leaves */
+.leaf {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #8bc34a;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
