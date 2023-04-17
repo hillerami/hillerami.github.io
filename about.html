@@ -20,69 +20,73 @@
         </ul>
     </nav>
 
-    <section id="about">
-        <div class="container">
-            <!-- About me content goes here -->
-            <ul>
-                <li>
-                    <p>Email: hiller.a.m.michelle@gmail.com</p>
-                </li>
-                <li>
-                    <p><a href="https://www.linkedin.com/in/hiller-michelle">LinkedIn</a></p>
-                </li>
-                <li>
-                    <p><a href="https://www.hillerami.wordpress.com">WordPress</a></p>
-                </li>
-                <li>
-                    <p><a href="https://www.goodreads.com/user/show/14882793-michelle-hiller">Goodreads</a></p>
-                </li>
-            </ul>
+    <main>
 
-        </div>
-    </section>
 
-    <section id="FamilyTree">
-        <h1>Family Tree</h1>
+        <section id="about">
+            <div class="container">
+                <!-- About me content goes here -->
+                <ul>
+                    <li>
+                        <p>Email: hiller.a.m.michelle@gmail.com</p>
+                    </li>
+                    <li>
+                        <p><a href="https://www.linkedin.com/in/hiller-michelle">LinkedIn</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://www.hillerami.wordpress.com">WordPress</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://www.goodreads.com/user/show/14882793-michelle-hiller">Goodreads</a></p>
+                    </li>
+                </ul>
 
-        <!-- start of family tree -->
-        <div class="node">
-            <h2>You</h2>
-            <div class="connector"></div>
-            <div class="branch"></div>
+            </div>
+        </section>
+
+        <section id="FamilyTree">
+            <h1>Family Tree</h1>
+
+            <!-- start of family tree -->
             <div class="node">
-                <h3>Parent 1</h3>
+                <h2>You</h2>
                 <div class="connector"></div>
                 <div class="branch"></div>
                 <div class="node">
-                    <h4>Grandparent 1</h4>
+                    <h3>Parent 1</h3>
                     <div class="connector"></div>
                     <div class="branch"></div>
                     <div class="node">
-                        <h5>Great-grandparent 1</h5>
-                        <div class="leaf"></div>
+                        <h4>Grandparent 1</h4>
+                        <div class="connector"></div>
+                        <div class="branch"></div>
+                        <div class="node">
+                            <h5>Great-grandparent 1</h5>
+                            <div class="leaf"></div>
+                        </div>
+                        <div class="node">
+                            <h5>Great-grandparent 2</h5>
+                            <div class="leaf"></div>
+                        </div>
                     </div>
-                    <div class="node">
-                        <h5>Great-grandparent 2</h5>
-                        <div class="leaf"></div>
-                    </div>
-                </div>
-                <div class="branch"></div>
-                <div class="node">
-                    <h4>Grandparent 2</h4>
-                    <div class="connector"></div>
                     <div class="branch"></div>
                     <div class="node">
-                        <h5>Great-grandparent 3</h5>
-                        <div class="leaf"></div>
-                    </div>
-                    <div class="node">
-                        <h5>Great-grandparent 4</h5>
-                        <div class="leaf"></div>
+                        <h4>Grandparent 2</h4>
+                        <div class="connector"></div>
+                        <div class="branch"></div>
+                        <div class="node">
+                            <h5>Great-grandparent 3</h5>
+                            <div class="leaf"></div>
+                        </div>
+                        <div class="node">
+                            <h5>Great-grandparent 4</h5>
+                            <div class="leaf"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; <span id="currentYear"></span> Michelle Hiller Blog. All rights reserved.</p>
@@ -91,7 +95,7 @@
     <!-- Add reference to your CSS file and any other scripts just before the closing body tag -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/about.css">
-    <script src="script.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
