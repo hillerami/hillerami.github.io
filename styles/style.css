@@ -28,11 +28,13 @@ body {
 
 /* Header styles */
 header {
-    display:flex;
+    display: flex;
     background-color: #A3BFA4;
     color: black;
     padding: 20px;
+    border-bottom: 1px solid black;
 }
+
 header h4 {
     margin: 0 0 0 10px;
 }
@@ -43,7 +45,8 @@ footer {
     background-color: #A3BFA4;
     text-align: center;
     width: 100%;
-    border-top: 1px solid black; /* add border to top of footer */
+    border-top: 1px solid black;
+    /* add border to top of footer */
     padding-top: 30px;
 }
 
@@ -52,15 +55,9 @@ nav {
     padding: 10px;
 }
 
-nav ul li a:hover {
-    color: #ffcc00;
-    /* Change text color on hover */
-}
-
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
 }
 
 li {
@@ -71,6 +68,10 @@ li {
 a {
     color: #fff;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 
@@ -87,7 +88,8 @@ h2 {
     margin-bottom: 10px;
 }
 
-h3, h4 {
+h3,
+h4 {
     color: #38403D;
 }
 
@@ -116,7 +118,7 @@ h3 {
 }
 
 p {
-    color:black;
+    color: black;
     margin-bottom: 10px;
 }
 
@@ -134,6 +136,7 @@ a {
     width: 65px;
     height: 65px;
 }
+
 /* Footer Logo */
 .footer-logo {
     margin-bottom: 10px;
