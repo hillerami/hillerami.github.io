@@ -3,11 +3,15 @@ li {
     margin-bottom: 10px;
 }
 
-#about a {
+#about p {
     color: #007bff;
     font-size: 20px;
 }
 
 #about ul {
     list-style-type: square;
+}
+
+i {
+    margin-right: 20px;
 }
