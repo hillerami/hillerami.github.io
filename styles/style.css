@@ -18,6 +18,14 @@ body {
     background-color: #F7EFED;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A3BFA4;
+}
+
 /* Set a base font size and color */
 body {
     font-family: Arial, sans-serif;
@@ -65,14 +73,6 @@ li {
     margin-right: 10px;
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #A3BFA4;
-}
 
 
 
