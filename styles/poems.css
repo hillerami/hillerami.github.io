@@ -45,11 +45,11 @@
 
 /* Caption text */
 .text {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 600;
   padding: 8px 12px;
   position: absolute;
-  top: -5%;
+  top: -7%;
   width: 100%;
   text-align: center;
 }
