@@ -49,3 +49,7 @@
 .column a:hover {
     color: #A3BFA4;
 }
+
+.read-more {
+    text-align: center;
+}
