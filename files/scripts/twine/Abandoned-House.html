@@ -35,7 +35,7 @@
 
 
 
-</script><tw-passagedata pid="1" name="Abandoned House" tags="" position="516,222" size="100,100">Lost in the woods after going off the path while hiking you find an abandon house in the forest. It looks like it&#39;s been abandoned for while with some windows boarded up, grafiti on the walls and the paint chipping off the walls. There is also a page on the ground covered browns spots that could be blood and dirt. You look at it and decide to
+</script><tw-passagedata pid="1" name="Abandoned House" tags="" position="525,225" size="100,100">Lost in the woods after going off the path while hiking, you find an abandoned house in the forest. It looks like it&#39;s been abandoned for a while, with some windows boarded up, graffiti on the walls and the paint chipping off them. There is also a page on the ground covered with brown spots that could be blood and dirt. You look at it and decide to
 
 [[Go inside abandon house]]
 
@@ -43,7 +43,7 @@
 
 [[Read page]]
 
-(set: $leave to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="2" name="Go inside abandon house" tags="" position="281,159" size="100,100">Even though the house looks old but you can see that you&#39;ll be safe inside as there hasn&#39;t been enough damaged that the floor has been completely rotten. But maybe you should try to find a way out of these wood?
+(set: $leave to &quot;false&quot;)</tw-passagedata><tw-passagedata pid="2" name="Go inside abandon house" tags="" position="281,159" size="100,100">Even though the house looks old, you can see that you&#39;ll be safe inside as there hasn&#39;t been enough damage that the floor has been completely rotten. But maybe you should try to find a way out of the woods?
 
 [[Walk up to house]] 
 
@@ -55,9 +55,10 @@
 [Say hello?]&lt;sayhello|
 
 
-(click: ?sayhello) [The person turns around and tries to stab you but you luckily manage to dodge it in time [[Run away]]] 
+(click: ?sayhello) [The person turns around and tries to stab you but you luckily manage to dodge it in time.
+[[Run away]]]
 
-</tw-passagedata><tw-passagedata pid="4" name="Go inside" tags="" position="559,590" size="100,100">The hallway is painted with a light purple colour with frames of people and places. You walk up to one and see a picture of a man with black hair smiling and a women with a permed brown hair also smiling. You see another page lying on the ground. 
+</tw-passagedata><tw-passagedata pid="4" name="Go inside" tags="" position="559,590" size="100,100">The hallway is painted light purple with frames of people and places. You walk up to one and see a picture of a man with black hair and a woman with permed brown hair both smiling. You see another page lying on the ground.
 
 [[Go upstairs]]
 
@@ -71,15 +72,15 @@
 
 (if: $leave is &quot;true&quot;)[ Finished exploring the house you [[Leave the house]] ]
 
-</tw-passagedata><tw-passagedata pid="5" name="Go into office" tags="" position="897,369" size="100,100">You go into the office and upon entering you see there&#39;s books thrown around the room with the windows boarded up but there is enough light to see that there a desk with a journal on top. You walk over the desk seeing that it&#39;s looks like it&#39;s getting later in the day outside. The cover of the book looks like it&#39;s leather and it&#39;s worn around the edges. This could be the journal where the pages are coming from, do you
+</tw-passagedata><tw-passagedata pid="5" name="Go into office" tags="" position="897,369" size="100,100">You go into the office, and upon entering, you see books thrown around the room with the windows boarded up, but there is enough light to see a desk with a journal on top. You walk over to the desk, glancing out the window to see that it&#39;s getting later in the day outside. The cover of the book seems like it&#39;s leather, and it&#39;s worn around the edges. This could be the journal where the pages are coming from. Do you
 
 [[Pick up the journal]]
 
 [[Keep exploring the office]]
 
-</tw-passagedata><tw-passagedata pid="6" name="Go upstairs" tags="" position="393,811" size="100,100">You go up the stairs and go into a bedroom that looks more like a guest bedroom than one for the people living here. There&#39;s a frame of a bed at the end of the room and a dresser next to it. On the dresser is a plastic flower and there is one abandoned shoe on the ground next to the bed frame. The shoe looks to be a running shoe and oddly there is not second pair. There&#39;s also another page on the ground that also has dark spots on it that may be blood.
+</tw-passagedata><tw-passagedata pid="6" name="Go upstairs" tags="" position="393,811" size="100,100">You go up the stairs and enter a bedroom that looks more like a guest bedroom than one for the people living here. There&#39;s a frame of a bed at the end of the room and a dresser next to it. On the dresser is a plastic flower, and one abandoned shoe is on the ground next to the bed frame. The shoe looks like a running shoe; oddly, there is no second pair. There&#39;s another page on the floor with dark spots that may be blood.
 
-[Shoe]&lt;getShoe|
+[Shoe?]&lt;getShoe|
 
 [[Pick up plastic flower]]
 
@@ -89,9 +90,9 @@
 
 (set: $shoe to &quot;false&quot;)
 (click: ?getshoe)[You picked up the shoe]
-(set: $shoe to &quot;true&quot;)]
+(set: $shoe to &quot;true&quot;)
 
-</tw-passagedata><tw-passagedata pid="7" name="Go downstairs" tags="" position="671,749" size="100,100">You go downstairs to find a locket and a flashlight laying on the floor. There is also another page on the ground though this one looks to be damaged a little from water.
+</tw-passagedata><tw-passagedata pid="7" name="Go downstairs" tags="" position="671,749" size="100,100">You go downstairs to find a locket and a flashlight lying on the floor. There is also another page on the ground though this one looks to be damaged a little from water.
 
 [Flashlight]&lt;getFlashlight|
 
@@ -103,39 +104,48 @@
 [[Pick up another page]]
 
 (set: $flashlight to &quot;false&quot;)
-(click: ?getflashlight)[You picked up the flashlight
+(click: ?getflashlight)[You picked up the flashlight.
 (set: $flashlight to &quot;true&quot;)]
 
-(set: $matches to &quot;false&quot;)
-(click: ?getmatches)[You picked up the matches
-(set: $matches to &quot;true&quot;)]
-
-</tw-passagedata><tw-passagedata pid="8" name="Run away" tags="" position="886,150" size="100,100">You run from this maniac rushing pass the trees and going farthering into the woods you hear the person yell &quot;Come back here!&quot;. You finally get to a clearing with no trees in the distance that may lead to a road, do you...
+</tw-passagedata><tw-passagedata pid="8" name="Run away" tags="" position="886,150" size="100,100">You run from this maniac, rushing past the trees and going farther into the woods; you hear the person yell, &quot;Come back here!&quot;. You finally get to a clearing with no trees in the distance that may lead to a road, do you...
 
 [[Run into the clearing]]
 
 [[I would have no protection, stay in the forest]]
 
-</tw-passagedata><tw-passagedata pid="9" name="Run into the clearing" tags="" position="1057,247" size="100,100">You run into the clearing trying to find the road when the figure catches up to you and you turn around to fight. You try to fight them but the figure easily over powers you stabbing you in your chest. Collapsing to the ground you stare at this person just laughing. Trying to crawl away your vision starts to turn to black and you (text-colour:red)[die]
+</tw-passagedata><tw-passagedata pid="9" name="Run into the clearing" tags="" position="1057,247" size="100,100">You run into the clearing, trying to find the road, when the figure catches up to you, and you turn around to fight. You try to resist them, but the figure easily overpowers you stabbing you in your chest. Collapsing to the ground, you stare at this person just laughing. Trying to crawl away, your vision starts to turn black and you
+(text-colour:red)[die.]
 
 
-					(text-colour:red)[GAME OVER]</tw-passagedata><tw-passagedata pid="10" name="I would have no protection, stay in the forest" tags="" position="993,48" size="100,100">You keep zig-zaging through the forest moving back trees and pushing away low branches when you reach another clearing that clearly shows a paved road. 
+					{
+ (live: 7s)[
+    (stop:)
+    (text-colour:red)[GAME OVER]
+ ]
+}</tw-passagedata><tw-passagedata pid="10" name="I would have no protection, stay in the forest" tags="" position="993,48" size="100,100">You keep zig-zagging through the forest, weaving between the trees and pushing away low branches when you reach another clearing that clearly shows a paved road.
 
 [[Run to road]]
 
-</tw-passagedata><tw-passagedata pid="11" name="Pick up the journal" tags="" position="936,526" size="100,100">You pick up the journal and hear a whisper say **&quot;Why did you touch that?&quot;**. Freaking out as you thought you were alone in this house you decide to
+</tw-passagedata><tw-passagedata pid="11" name="Pick up the journal" tags="" position="936,526" size="100,100">You pick up the journal and hear a whisper say, **&quot;Why did you touch that?&quot;** Freaking out as you thought you were alone in this house, you decide to
 
 [[Leave the office-&gt; Get attacked by ghost]]
 
-[[Look around to see who is talking]]</tw-passagedata><tw-passagedata pid="12" name="Keep exploring the office" tags="" position="1139,476" size="100,100">You keep exploring the office opening the drawers of the desk and looking at some of the books on the floor. There&#39;s mainly books about history but ultimately you don&#39;t find anything interesting. Glancing back towards to journal you
+[[Look around to see who is talking]]</tw-passagedata><tw-passagedata pid="12" name="Keep exploring the office" tags="" position="1139,476" size="100,100">You keep exploring the office, opening the desk drawers and looking at some of the books on the floor. There are mainly books about history, but ultimately you don&#39;t find anything interesting. Glancing back toward to journal you
 
 [[Pick up the journal]] 
 
-[[Go inside]] to the hallway</tw-passagedata><tw-passagedata pid="13" name=" Get attacked by ghost" tags="" position="977,662" size="100,100">Runing to get out of the room you don&#39;t even reach the door when a ghostly figure attacks you, clawing for the journal and for some reason you can&#39;t let go. You see that this ghost is the women in the photo and she is screaming at you to give her back her property. (text-colour:red)[Not being able to get free you are attacked by the ghost and **killed**]. As your vision turns to black you see this female figure crying as she cluches her journal.
+[[Go inside]] to the hallway</tw-passagedata><tw-passagedata pid="13" name=" Get attacked by ghost" tags="" position="977,662" size="100,100">Running to get out of the room, you don&#39;t even reach the door when a ghostly figure attacks you, clawing for the journal, and for some reason, you can&#39;t let go. You see that this ghost is the woman in the photo, and she is screaming at you to give her back her property. (text-colour:red)[Not being able to get free, you are attacked by the ghost and **killed**].
+As your vision turns black, you see this female figure crying as she clutches her journal.
 
-(text-colour:red)[GAME OVER]</tw-passagedata><tw-passagedata pid="14" name="Look around to see who is talking" tags="" position="1151,686" size="100,100">You feel brave as asking if anyone there and a ghostly figure appeares before you. She looks like the woman in the photo though has a red patch and what looks to be like a stabbed wound on her chest. 
+					{
+ (live: 7s)[
+    (stop:)
+    (text-colour:red)[GAME OVER]
+ ]
+}</tw-passagedata><tw-passagedata pid="14" name="Look around to see who is talking" tags="" position="1151,686" size="100,100">Feeling brave, you ask if anyone is there, and a ghostly figure appears before you. She looks like the woman in the photo, though she has a red patch and what looks to be like a stabbed wound on her chest.
 
-*&quot;Why have you taken my journal?&quot;*, she asks and you reply with
+*&quot;Why have you taken my journal?&quot;* she asks, and you reply with
+
 
 [[Because it looked interesting]]
 
@@ -146,40 +156,40 @@
 
 [[You run towards to door]] </tw-passagedata><tw-passagedata pid="16" name="Because I wanted it" tags="" position="1312,809" size="100,100">She now looks furious and yells **&quot;GIVE IT BACK NOW!&quot;** and lunges towards you and 
 
-[[You run towards to door]] </tw-passagedata><tw-passagedata pid="17" name="Say Yes" tags="" position="1089,969" size="100,100">The ghost smiles at you at, her stabbed wound dispears and looks calmer than she did before, *&quot;Alright but make sure you return it, and be careful in this house, my name is Susan if you need any help&quot;*. There isn&#39;t much but you find the last entry that says,
-
-(Click: ?readjournal)[
+[[You run towards to door]] </tw-passagedata><tw-passagedata pid="17" name="Say Yes" tags="" position="1089,969" size="100,100">The ghost smiles at you, her stabbed wound disappears and looks calmer than she did before.* &quot;Alright but make sure you return it, and be careful in this house. My name is Susan if you need any help&quot;*. There isn&#39;t much, but you find the last entry
+[read journal]&lt;readjournal|
+(Click:?readjournal)[
 *May 16, 1982
 
-I don&#39;t care anymore, I&#39;m going to ask Anna to leave. I don&#39;t want that woman in my house and I know she has someting to do with Jason&#39;s disapearance. The way also Steve has been acting it&#39;s all to do with her so after I finish writing this I&#39;m going to confront her and tell her to get out! And to take that stupid doll with her! I wish I never agreed to let her into my house! I swear if anythign happeans to me I will not rest, I will stop whatever people she is trying to manipulate.*]
+I don&#39;t care anymore. I&#39;m going to ask Anna to leave. I don&#39;t want that woman in my house, and I know she has something to do with Jason&#39;s disappearance. The way also Steve has been acting it&#39;s all to do with her, so after I finish writing this, I&#39;m going to confront her and tell her to get out! And to take that stupid doll with her! I wish I never agreed to let her into my house! I swear if anything happens to me, I will not rest. I will stop whatever people she is trying to manipulate.*]
 
-Looking up and Susan is gone. You figure Anna must have killed her and trapped her in the house. You wonder about what doll she is talking about but ultimately you decide to 
+Looking up, Susan is gone. You figure Anna must have killed her and trapped her in the house. You wonder about what doll she is talking about, but ultimately you decide to 
 
 [[Leave the house]]
 
 [[ Explore the house more despite the danger]]
 
 (set: $leave to &quot;true&quot;)
-(set: $respect to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="18" name="You run towards to door" tags="" position="1312,959" size="100,100">But she catches you before you can reach it. (text-colour:red)[The ghost puts her hand inside her chest and you feel it tighten as you are killed.]
+(set: $respect to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="18" name="You run towards to door" tags="" position="1312,959" size="100,100">But she catches you before you can reach it. (text-colour:red)[The ghost puts her hand inside your chest, and you feel it tighten as you are killed.]
 
-(text-colour:red)[GAME OVER]</tw-passagedata><tw-passagedata pid="19" name="Leave the house" tags="" position="1400,1147" size="100,100">You leave the house and
+(text-colour:red)[GAME OVER]</tw-passagedata><tw-passagedata pid="19" name="Leave the house" tags="" position="1400,1150" size="100,100">You leave the house and
 
-(if: $leave is &quot;true&quot;)[wandering through the woods and finally find a road. You flag down a car who takes you safely home. Hopefully you&#39;ll be able to forget this experience or maybe try to go back and help Susan. 
+(if: $leave is &quot;true&quot;)[wandering through the woods and finally finding a road. You flag down a car that takes you safely home. Hopefully, you&#39;ll be able to forget this experience or maybe try to go back and help Susan. 
 (text-colour:purple)[YOU SURVIVE]]
 
 (if: $leave is &quot;false&quot;)[You hear a voice say **&quot;YOU WILL NEVER LEAVE!&quot;**[[Look around]]]</tw-passagedata><tw-passagedata pid="20" name=" Explore the house more despite the danger" tags="" position="914,876" size="100,100">You are now free to walk out of the office door with Susan not appearing anymore and
 
-[[Go inside]] to the hallway</tw-passagedata><tw-passagedata pid="21" name="Pick up the locket" tags="" position="610,886" size="100,100">You pick up the locket it&#39;s shaped in an oval and look like it could be open but hearing a child&#39;s giggle you decide to 
+[[Go inside]] to the hallway</tw-passagedata><tw-passagedata pid="21" name="Pick up the locket" tags="" position="610,886" size="100,100">You pick up the locket; it&#39;s shaped like an oval and looks like it could be open, but hearing a child&#39;s giggle, you decide to
 
 [[Go to where you hear the giggle]]
 
 [[Leave the basement-&gt; Go inside]]
 
-(set: $locket to &quot;bad&quot;)</tw-passagedata><tw-passagedata pid="22" name="Explore the basement" tags="" position="773,938" size="100,100">You explore the basement and find nothing just a door leading to another room. Looking back towards to locket you
+(set: $locket to &quot;bad&quot;)</tw-passagedata><tw-passagedata pid="22" name="Explore the basement" tags="" position="773,938" size="100,100">You explore the basement and find nothing, just a door leading to another room. Looking back towards to locket you
 
 [[Pick up the locket]] 
 
-Go up the stairs and [[Go inside]] </tw-passagedata><tw-passagedata pid="23" name="Go to where you hear the giggle" tags="" position="452,1120" size="100,100">You go over to where you heard the giggle courious to know who else is here and find a poreclain doll in a chair. It has blonde curls and a blue dress and bonnet, weirdly enough it looks like it&#39;s in perfect condition. 
+Go up the stairs and [[Go inside]] </tw-passagedata><tw-passagedata pid="23" name="Go to where you hear the giggle" tags="" position="452,1120" size="100,100">You go over to where you heard the giggle, curious to know who else is here and find a porcelain doll in a chair. It has blonde curls and a blue dress and bonnet; weirdly enough, it looks like it&#39;s in perfect condition.
 
 [[You walk over to the doll]]
 
@@ -187,19 +197,19 @@ Go up the stairs and [[Go inside]] </tw-passagedata><tw-passagedata pid="23" nam
 
 (if: $stickfigure is &quot;bad&quot;)[You also see a woman in a black robe running after you saying &quot;Come on baby catch her!]
 
-[[Run upstairs]] </tw-passagedata><tw-passagedata pid="25" name="You walk over to the doll" tags="" position="452,1270" size="100,100">You walk over to the doll,  and it looks at you saying, *&quot;That locket is mine&quot;* and gets off her chair running to you with her hand streched out and you
+[[Run upstairs]] </tw-passagedata><tw-passagedata pid="25" name="You walk over to the doll" tags="" position="452,1270" size="100,100">You walk over to the doll,  and it looks at you, saying, *&quot;That locket is mine,&quot;* and gets off her chair, running to you with her hand stretched out and you
 
 [[Run upstairs]]
 
-(if: $flashlight is &quot;true&quot;)[You hit the doll with the flashlight, glad that you picked it up and [[Dash  up the stairs]]]
+(if: $flashlight is &quot;true&quot;)[You hit the doll with the flashlight; glad that you picked it up and  [[Dash  up the stairs]]]
 
-</tw-passagedata><tw-passagedata pid="26" name="Run to road" tags="" position="1116,128" size="100,100">Yoy run to the road and luckily there is a blue car just happening to be driving by. Screaming &quot;Help!&quot; and running towards it the car stops and an elderly couple let you in. You scream at them to drive and they drive as they see the person run out of the woods. Luckily you escape from this person and the woods 
+</tw-passagedata><tw-passagedata pid="26" name="Run to road" tags="" position="1116,128" size="100,100">You run to the road, and luckily there is a blue car just happening to be driving by. Screaming &quot;Help!&quot; and running towards it, the vehicle stops, and an elderly couple lets you in. You scream at them to drive, and they go as they see the person run out of the woods. Luckily you escape from this person and the woods.
 
 (text-colour:purple)[You Survive]
 
 
 
-</tw-passagedata><tw-passagedata pid="27" name="Run upstairs" tags="" position="552,1400" size="100,100">The doll grabs your legs and pulls you down
+</tw-passagedata><tw-passagedata pid="27" name="Run upstairs" tags="" position="550,1400" size="100,100">The doll grabs your legs and pulls you down
 
 [[Fight the doll]] 
 
@@ -207,13 +217,18 @@ Go up the stairs and [[Go inside]] </tw-passagedata><tw-passagedata pid="23" nam
 
 [[Leave the house]] 
 
-(set: $leave to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="29" name="Fight the doll" tags="" position="477,1550" size="100,100">You fight with the doll but it&#39;s no use, (text-colour:red)[it chokes you to death]
+(set: $leave to &quot;true&quot;)</tw-passagedata><tw-passagedata pid="29" name="Fight the doll" tags="" position="477,1550" size="100,100">You fight with the doll, but it&#39;s no use, (text-colour:red)[it chokes you to death]
 
-(if: $stickfigure is &quot;bad&quot;)[The woman is laughing in the background as she is saying good girl! You look at this woman and wonder if it is Anna but it&#39;s been so long. Finally your vision turn to black.
+(if: $stickfigure is &quot;bad&quot;)[The woman is laughing in the background as she is saying, *“Good girl!”* You look at this woman and wonder if it&#39;s Anna, but it&#39;s been too long, and finally, your vision turns black.]
 
-(text-colour:red)[GAME OVER]</tw-passagedata><tw-passagedata pid="30" name="Ask Susan to save you from the doll" tags="" position="627,1546" size="100,100">Susan grabs the locket from you and grabs the doll putting the locket around it&#39;s neck picking it up and rocking and cooing to it. She looks up at you and mouths *&quot;Leave&quot;*
+				{
+ (live: 7s)[
+    (stop:)
+    (text-colour:red)[GAME OVER]
+ ]
+}</tw-passagedata><tw-passagedata pid="30" name="Ask Susan to save you from the doll" tags="" position="627,1546" size="100,100">Susan grabs the locket from you and grabs the doll putting the locket around its neck, picking it up, and rocking and cooing to it. She looks up at you and mouths *&quot;Leave&quot;*
 
-(if: $stickfigure is &quot;bad&quot;)[The woman in the robes is suddenly gone and you]
+(if: $stickfigure is &quot;bad&quot;)[The woman in the robes is suddenly gone, and you]
 
 [[Leave the house]] </tw-passagedata><tw-passagedata pid="31" name="Pick up plastic flower" tags="" position="146,897" size="100,100">You hear a goofy laugh and turn around seeing a clown dressed up in a baggy yellow clown suit, white painted face, and a red nose. He is holding a knife and is blocking the door so you
 
@@ -226,21 +241,21 @@ Go up the stairs and [[Go inside]] </tw-passagedata><tw-passagedata pid="23" nam
 
 [[Walk away]] 
 
-[[Walk up to house]] </tw-passagedata><tw-passagedata pid="33" name="Look around the bedroom" tags="" position="157,687" size="100,100">You keep look around the bedroom but don&#39;t find anything interesting. You glance back towards the plastic flower
+[[Walk up to house]] </tw-passagedata><tw-passagedata pid="33" name="Look around the bedroom" tags="" position="150,700" size="100,100">You keep looking around the bedroom but don&#39;t find anything else interesting. You glance back toward the plastic flower
 
 [[Pick up plastic flower]] 
 
-[[Go downstairs-&gt;Go inside]] </tw-passagedata><tw-passagedata pid="34" name="Make a dash for the window" tags="" position="327,1004" size="100,100">You make a dash for the window but you can&#39;t open it
-(if: $stickfigure is &quot;bad&quot;)[As you turn around you see a women in robes chanting for *&quot;Steve get her! Get her!&quot;*]
+[[Go downstairs-&gt;Go inside]] </tw-passagedata><tw-passagedata pid="34" name="Make a dash for the window" tags="" position="327,1004" size="100,100">You make a dash for the window but you can&#39;t open it.
+(if: $stickfigure is &quot;bad&quot;)[As you turn around you see a women in robes chanting *&quot;Steve get her! Get her!&quot;*]
 
 [[Try to fight clown]]
 
 
-(if: $respect is &quot;true&quot;)[You cry out to the ghost for help [[Susan fights the clown]]]</tw-passagedata><tw-passagedata pid="35" name="Try to fight clown" tags="" position="200,1204" size="100,100">You try to fight the clown but your fists are no use against a knife. (text-colour:red)[The clown stabs you in the chest]
+(if: $respect is &quot;true&quot;)[You cry out to the ghost for help [[Susan fights the clown]]]</tw-passagedata><tw-passagedata pid="35" name="Try to fight clown" tags="" position="200,1204" size="100,100">You try to fight the clown but your fists are no use against a knife. (text-colour:red)[The clown stabs you in the chest.]
 
-(if: $stickfigure is &quot;bad&quot;)[What surely is Anna is laughing as she chants *&quot;Well done Steve!&quot;* She pets him ontop of his head and she smirks at you
+(if: $stickfigure is &quot;bad&quot;)[What surely is Anna is laughing as she chants *&quot;Well done Steve!&quot;* She pets him on top of his head and she smirks at you.]
 
-(text-colour:red)[GAME OVER]</tw-passagedata><tw-passagedata pid="36" name="Susan fights the clown" tags="" position="328,1201" size="100,100">Susan grabs the plastic flower and goes over the the clowns putting it on him. The clown looks confused and says *&quot;Susan? What&#39;s happening?&quot;* and she mouths *&quot;Leave&quot;*
+(text-colour:red)[GAME OVER]</tw-passagedata><tw-passagedata pid="36" name="Susan fights the clown" tags="" position="328,1201" size="100,100">Susan grabs the plastic flower and goes over the the clowns putting it on him. The clown looks confused and says *&quot;Susan? What&#39;s happening?&quot;* and she mouths to you *&quot;Leave&quot;*
 
 (if: $stickfigure is &quot;bad&quot;)[ The woman in robes that maybe was Anna is gone, like she can&#39;t take Susan&#39;s presence]
 
@@ -258,15 +273,16 @@ Go up the stairs and [[Go inside]] </tw-passagedata><tw-passagedata pid="23" nam
 
 *April 23, 1982
 
-Jason and I have just moved into our dream house! After saving for so long we have finally gotten the quiet life we have always wanted. Everything is finally going to plan though Jason&#39;s cousin Anna is wanting to come visit right away for some reason. She says that she wants some peace and quiet from the city but we&#39;ve just moved in? Shouldn&#39;t she wait awhile before asking some like this? Anyway Jason seems to be fond of her so he agreed, we ended up arguing for three days after that. Oh well maybe this means I can invite my brother Steve over. I mean Jason doesn&#39;t like clowns but if I have to put up with his cousin I pretty sure he wouldn&#39;t mind Steve (and it&#39;s only to put on shows for my opinion that he dresses like a clown).*
+Jason and I have just moved into our dream house! After saving for so long, we have finally gotten the quiet life we have always wanted. Everything is finally going to plan though Jason&#39;s cousin Anna wants to come to visit right away for some reason. She says that she wants some peace and quiet from the city, but we&#39;ve just moved in? Shouldn&#39;t she wait a while before asking something like this? Anyway, Jason seemed to be fond of her, so he agreed; we ended up arguing for three days after that. Oh well, maybe this means I can invite my brother Steve over. I mean, Jason doesn&#39;t like clowns, but if I have to put up with his cousin, I&#39;m pretty sure he wouldn&#39;t mind Steve (and it&#39;s only to put on shows, in my opinion, that he dresses like a clown).*
 
-Maybe this was from the house of the owner? But it doesn&#39;t look like it&#39;s been damaged by water? Weird
+Maybe this was from the house of the owner? But it doesn&#39;t look like it&#39;s been damaged by water? Weird.
+
 
 [[Go inside]] 
 
 [[Pick up stick figure]] 
 
-(set: $page to &quot;read&quot;)</tw-passagedata><tw-passagedata pid="40" name="Throw shoe at clown" tags="" position="117,1034" size="100,100">You throw the shoe at the clown as it hits him in the head and stuns him enough that you can dash out the door 
+(set: $page to &quot;read&quot;)</tw-passagedata><tw-passagedata pid="40" name="Throw shoe at clown" tags="" position="117,1034" size="100,100">You throw the shoe at the clown as it hits them in the head and stuns them enough that you can dash out the door 
 
 [[Go down the stairs-&gt;Leave the house]] </tw-passagedata><tw-passagedata pid="41" name="Pick up second page" tags="" position="553,753" size="100,100">You bend down to pick up this now second page and read 
 
@@ -277,15 +293,25 @@ That&#39;s a shitty experience you think and wondering if the man and the woman 
 
 [[Look around house-&gt;Go inside]] </tw-passagedata><tw-passagedata pid="42" name="Pick up another page" tags="" position="804,802" size="100,100">*May 13, 1982
 
-Well Jason is gone and weirdly Anna has placed the doll in the basement saying for me not to move her? Excuse me this is my own house and I can do whatever I want! She even placed a locket around it&#39;s neck saying it&#39;s, &quot;turning into an adult gift&quot;... I wished I was brave enough to tell her to get out. What ever maybe I&#39;ll try to remove it later when Anna is distraced with whatever she does in her room.*
+Well, Jason is gone, and weirdly Anna has placed the doll in the basement, saying for me not to move her? Excuse me, this is my own house, and I can do whatever I want! She even placed a locket around its neck, saying it was &quot;turning into a special gift&quot;... I wished I was brave enough to tell her to get out. Whatever ever, maybe I&#39;ll try to remove it later when Anna is distracted with whatever she does in her room.*
 
-[[Put page in pocket-&gt;Go downstairs]] </tw-passagedata><tw-passagedata pid="43" name="Look around" tags="" position="1400,1301" size="100,100">Looking around you see a woman in black robes who is behind you. She flicks her wrists and the door closes behind you. *&quot; Did you think you would be getting out?&quot;*, she says, *&quot;Oh no, you are going to help me to mae this house a living hell for anyone else that comes here&quot;*. Feeling a pain you fall to the floor, your bones feel like they&#39;re breaking apart a snapping back together. A howl escapses from you as you hear her laughter and relaxes you have now becomed a werewolf. (text-colour:red)[It did matter if you had something from her, the house was her&#39;s and without any protection so are you.]
+[[Put page in pocket-&gt;Go downstairs]] </tw-passagedata><tw-passagedata pid="43" name="Look around" tags="" position="1400,1301" size="100,100">[Looking around, you see a woman in black robes who is behind you. She flicks her wrists, and the door closes behind you. *&quot;Did you think you would be getting out?&quot;* she says, *&quot;Oh no, you are going to help me to make this house a living hell for anyone else that comes here.&quot;* Feeling pain, you fall to the floor, and your bones feel like they&#39;re breaking apart and snapping back together. A howl escapes you as you hear her laugh.
 
-(text-colour:red)[GAME OVER]</tw-passagedata><tw-passagedata pid="44" name="Pick up the page" tags="" position="446,941" size="100,100">It reads
+[Relax, you have now become a ](text-colour:#964B00)[werewolf.]
+
+(text-colour:red)[It would have mattered if you had something from her. The house is her&#39;s and without any protection, so are you.]]
+
+{
+ (live: 7s)[
+    (stop:)
+    (text-colour:red)[GAME OVER]
+ ]
+}</tw-passagedata><tw-passagedata pid="44" name="Pick up the page" tags="" position="450,950" size="100,100">You pick up the page, and it reads
 
 *May 15, 1982
 
-Something has been happening to Steve he&#39;s spending more time with Anna, I thought he didn&#39;t like her? He also keeps calling her his Queen and is spending more time in his clown costume. I really don&#39;t know what to do and with Jason gone for his job I&#39;m getting too nervous to stay here. It&#39;s like Steve isn&#39;t my brother anymore, maybe I&#39;ll go see him and ask what&#39;s going on?*
+Something has been happening to Steve. He&#39;s spending more time with Anna; I thought he didn&#39;t like her? He also keeps calling her his Queen and spending more time in his clown costume. I really don&#39;t know what to do, and with Jason gone for his job, I&#39;m getting too nervous to stay here. It&#39;s like Steve isn&#39;t my brother anymore; maybe I&#39;ll see him and ask what&#39;s going on?*
+
 
 [[Put page away-&gt;Go upstairs]] </tw-passagedata><tw-passagedata pid="45" name="Read page" tags="" position="712.6666666666667,292.6666666666667" size="100,100">*May 14, 1982
 
