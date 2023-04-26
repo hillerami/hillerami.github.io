@@ -74,6 +74,8 @@ nav {
 }
 
 ul {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
     margin: 0;
 }
@@ -83,6 +85,10 @@ li {
     margin-right: 10px;
 }
 
+li:last-child {
+    margin-left: auto;
+    padding-right: 30px;
+}
 
 
 
