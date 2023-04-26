@@ -1,15 +1,16 @@
 .featured {
     display: flex;
     justify-content: space-between;
+    margin: 0 15% 0 15%;
 }
 
 .column {
-    width: 25%;
+    width: 20%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: #fff;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .column:hover {
@@ -20,7 +21,7 @@
     width: 100%;
     max-width: 300px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .column h2 {
@@ -52,5 +53,6 @@
 }
 
 .read-more {
+    margin-top: auto;
     text-align: center;
 }

@@ -20,7 +20,7 @@ const setDate = () => {
     const minutes = ('0' + now.getMinutes()).slice(-2);
 
     const verboseDate = `Today is ${day}, ${currentMonth} ${now.getUTCDate()}`;
-    const verboseTime = `The current time is ${hourIn12HourFormat}:${minutes} ${amOrPm}`;
+    const verboseTime = `Current time is ${hourIn12HourFormat}:${minutes} ${amOrPm}`;
 
     document.getElementById("current-date").textContent = verboseDate;
     document.getElementById("current-time").textContent = verboseTime;
