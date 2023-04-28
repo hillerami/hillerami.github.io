@@ -73,7 +73,7 @@ nav {
     padding: 10px;
 }
 
-ul {
+nav ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
