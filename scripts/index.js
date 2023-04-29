@@ -3,12 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("DOM is ready!");
     // You can now safely access and manipulate the DOM elements
 
+
     setDate();
+    // update time every minute
+    setInterval(() => {
+        setDate();
+    }, 60 * 1000);
 });
 
 
 const setDate = () => {
-
     const now = new Date();
     const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
@@ -28,4 +32,3 @@ const setDate = () => {
     // also set footer year
     document.getElementById("currentYear").innerHTML = now.getFullYear();
 }
-
