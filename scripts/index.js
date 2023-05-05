@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(() => {
         setDate();
     }, 60 * 1000);
+
+    // animate title
+    animateTitle();
 });
 
 
@@ -31,4 +34,17 @@ const setDate = () => {
 
     // also set footer year
     document.getElementById("currentYear").innerHTML = now.getFullYear();
+}
+
+
+const animateTitle = () => {
+    const title = document.getElementById("title");
+    title.innerHTML = title.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    const letters = document.querySelectorAll(".letter");
+    letters.forEach((letter) => {
+        letter.style.display = "inline-block";
+        letter.style.transform = "rotateY(360deg)";
+        letter.style.animation = "animate-letters 2s linear";
+    });
 }
