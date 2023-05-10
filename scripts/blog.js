@@ -4,7 +4,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 const hideArticles = () => {
-  var articles = document.getElementsByClassName("article");
+  const articleContainer = document.getElementsByClassName("article-container");
+  articleContainer[0].style.visibility = "hidden";
+  const articles = document.getElementsByClassName("article");
   for (var i = 0; i < articles.length; i++) {
     articles[i].style.display = "none";
   }
@@ -13,7 +15,9 @@ const hideArticles = () => {
 const displayArticle = (articleId) => {
   // hide articles first then show selected article
   hideArticles();
+  const articleContainer = document.getElementsByClassName("article-container");
+  articleContainer[0].style.visibility = "visible";
   // Show the selected article
-  var article = document.getElementById(articleId);
+  const article = document.getElementById(articleId);
   article.style.display = "block";
 }
