@@ -36,9 +36,19 @@
     <main>
         <section id="blog">
             <div class="container">
-                <!-- Blog posts content goes here -->
-                <h2>Historical Articles</h2>
-                <div class="article-list">
+                <div class="section-container">
+                    <div>
+                        <h2>Historical Articles</h2>
+                        <button class="button" onclick="displayArticle('article1')">Regency in Britain</button>
+                        <button class="button" onclick="displayArticle('article2')">Regency in Austria</button>
+                    </div>
+                    <div>
+                        <h2>Other Writings</h2>
+                        <button class="button" onclick="displayArticle('article3')">Contemporary Royalty</button>
+                        <!-- <button class="button" onclick="displayArticle('article4')">Button 2</button> -->
+                    </div>
+                </div>
+                <div class="article-container">
                     <article id="article1" class="article">
                         <h3>The Regency Era in Britain</h3>
                         <h4>
@@ -163,271 +173,76 @@
                         </p>
                     </article>
                     <article id="article2" class="article">
-                        <h3>A Glimpse into Regency: An Era of Elegance and Evolution</h3>
-                        <p>
-                            The Regency era, which spanned from 1811 to 1820, was a remarkable period in British history
-                            marked by distinct social, cultural, and political changes. It was a time of transition and
-                            evolution, characterized by a unique blend of elegance, refinement, and societal
-                            transformations.
-                        </p>
-
-
-                        <h4>Historical Background:</h4>
-                        <p>
-                            The Regency era was named after the Prince Regent, who served as the de facto ruler of
-                            Britain
-                            during the reign of his father, King George III, who was incapacitated due to mental
-                            illness.
-                            The era began in 1811 when the Prince Regent assumed power and lasted until 1820 when he
-                            ascended to the throne as King George IV.
-                        </p>
-
-                        <p>
-                            The Regency era was marked by significant historical events, including the Napoleonic Wars,
-                            the
-                            Industrial Revolution, and the British Empire's expansion. These events had a profound
-                            impact on
-                            British society, politics, and culture, shaping the dynamics of the era.
-
-                        </p>
-
-                        <h4>Social and Cultural Changes:</h4>
-                        <p>
-                            The Regency era was characterized by a distinct social and cultural milieu. It was a time of
-                            elegance, refinement, and leisure, with the upper class indulging in extravagant lifestyles
-                            and
-                            indulgences. The aristocracy and gentry were known for their lavish parties, elegant balls,
-                            and
-                            fashionable clothing.
-                        </p>
-
-                        <p> Fashion played a prominent role in the Regency era, with distinct clothing styles for men
-                            and
-                            women. Women's fashion was characterized by high-waisted, empire-line dresses, delicate
-                            fabrics,
-                            and a preference for light and pastel colors. Men's fashion featured tailored coats,
-                            waistcoats,
-                            and knee-length breeches. It was a time when elegance, simplicity, and natural beauty were
-                            highly valued in fashion.</p>
-
-
-                        <p>
-                            Literature also flourished during the Regency era, with prominent writers such as Jane
-                            Austen,
-                            Lord Byron, and Percy Bysshe Shelley making their mark. Austen's novels, such as "Pride and
-                            Prejudice" and "Sense and Sensibility," portrayed the social customs, manners, and
-                            relationships
-                            of the Regency society with keen observation and wit. These literary works continue to be
-                            celebrated today for their insight into the Regency era and its societal norms.
-                        </p>
-
-
+                        <h3>The Regency Era in Austria: A Time of Elegance and Cultural Flourishing</h3>
                         <h4>
-                            Political Changes:
+                            Introduction
                         </h4>
                         <p>
-                            The Regency era was also marked by significant political changes. The Prince Regent, who
-                            later
-                            became King George IV, had a flamboyant personality and indulged in lavish spending, which
-                            led
-                            to political controversies and criticisms. Despite his personal flaws, the Regent supported
-                            important political and cultural developments of the time.
+                            The Regency era in Austria, spanning from 1815 to 1848, marked a significant period of
+                            cultural, social, and political transformation. Following the tumultuous Napoleonic Wars and
+                            the Congress of Vienna, Austria experienced a resurgence under the leadership of Archduke
+                            Johann of Austria as regent. This two-page blog explores the remarkable aspects of the
+                            Regency era in Austria, shedding light on the vibrant cultural scene, architectural marvels,
+                            and the society that thrived during this period.
                         </p>
-
+                        <h4>Cultural Renaissance</h4>
                         <p>
-                            The Napoleonic Wars, which occurred during the Regency era, had a significant impact on
-                            Britain.
-                            The country was at war with France under the leadership of Napoleon Bonaparte, and the war
-                            affected the economy, society, and politics of Britain. The war effort and its aftermath led
-                            to
-                            changes in government policies, economic reforms, and social dynamics, shaping the political
-                            landscape of the Regency era.
+                            The Regency era in Austria witnessed a flourishing cultural renaissance. The Viennese
+                            society embraced intellectual pursuits, art, and music. Under the patronage of Archduke
+                            Johann, prominent artists and musicians flocked to Vienna, turning the city into a cultural
+                            hub. The era saw the rise of influential composers like Franz Schubert and Ludwig van
+                            Beethoven, who composed masterpieces that have stood the test of time. The Viennese
+                            aristocracy hosted lavish salons, where artists, writers, and thinkers gathered to exchange
+                            ideas and shape the intellectual landscape of the time.
                         </p>
                         <h4>
-                            Legacy and Impact:
+                            Architectural Marvels
                         </h4>
                         <p>
-                            The Regency era left a lasting legacy and impact on British history and culture. It was a
-                            time
-                            of elegance, refinement, and cultural evolution, with significant contributions to
-                            literature,
-                            fashion, and societal norms. The societal changes of the era, such as the emphasis on
-                            natural
-                            beauty, simplicity, and elegance in fashion, continue to influence modern fashion trends.
+                            The Regency era in Austria left an indelible mark on the architectural landscape of the
+                            country. Vienna, in particular, experienced a wave of construction and urban development.
+                            The imperial capital witnessed the construction of iconic buildings such as the
+                            Greek-inspired Greek Parliament building, the majestic Belvedere Palace, and the grand
+                            Vienna State Opera. These architectural gems, characterized by their neoclassical and empire
+                            styles, showcased the opulence and grandeur of the Regency era. The legacy of these
+                            structures endures as symbols of Austria's rich history and cultural heritage.
                         </p>
-
+                        <h4>Fashion and Society</h4>
                         <p>
-                            The literary works of prominent writers from the Regency era, such as Jane Austen, continue
-                            to
-                            be celebrated and studied for their portrayal of the social customs and relationships of the
-                            time. The Regency era also set the stage for the Victorian era that followed, with its
-                            societal
-                            transformations, economic reforms, and political changes laying the groundwork for the
-                            societal
-                            shifts that would occur in the 19th century.
+                            The Regency era in Austria was marked by elegance and refinement in fashion. The Viennese
+                            elite embraced luxurious fabrics, intricate embroidery, and meticulous tailoring. Women's
+                            fashion featured empire-line dresses with high waistlines and flowing skirts, often adorned
+                            with delicate lace and intricate details. Men donned tailored coats, waistcoats, and
+                            cravats, epitomizing a sophisticated and dapper aesthetic. The society of the time was
+                            highly stratified, with a clear distinction between the aristocracy and the lower classes.
+                            Extravagant balls and social events became an integral part of Viennese society, providing a
+                            stage for the upper echelons to display their wealth, status, and refined manners.
                         </p>
-
-
-                        <h4>Conclusion:</h4>
+                        <h4>
+                            Political Landscape
+                        </h4>
                         <p>
-                            The Regency era in British history was a period of elegance, refinement, and evolution. It
-                            was a
-                            time of significant social, cultural, and political changes that left a lasting impact on
-                            British history and culture. The Regency era was marked by distinctive fashion, refined
-                            literature, and notable political developments.
+                            The Regency era in Austria also witnessed important political developments. Archduke Johann
+                            played a pivotal role in modernizing the Austrian administration and promoting economic
+                            reforms. His policies focused on promoting trade, industry, and education, aiming to uplift
+                            the country's economy. However, political unrest and calls for constitutional reforms gained
+                            momentum towards the end of the era, leading to the outbreak of the Revolutions of 1848
+                            across Europe.
                         </p>
-
+                        <h4>
+                            Conclusion
+                        </h4>
                         <p>
-                            The elegance and refinement of the Regency era can be seen in its fashion, with
-                            high-waisted,
-                            empire-line dresses for women and tailored coats, waistcoats, and breeches for men. The
-                            emphasis
-                            on simplicity, natural beauty, and pastel colors in fashion during this time influenced
-                            subsequent fashion trends and continues to be celebrated in modern fashion.
-                        </p>
-
-                        <p>
-                            Literature also flourished during the Regency era, with writers like Jane Austen, Lord
-                            Byron,
-                            and Percy Bysshe Shelley making significant contributions to British literature. Austen's
-                            novels, in particular, provided keen insights into the social customs, manners, and
-                            relationships of the Regency society, and her works continue to be cherished for their wit
-                            and
-                            observation of the era.
-                        </p>
-
-                        <p>
-                            The Regency era was also marked by notable political developments. The Prince Regent, who
-                            later
-                            became King George IV, had a controversial reign with lavish spending and flamboyant
-                            personality, but also supported important political and cultural changes of the time. The
-                            Napoleonic Wars, which occurred during the Regency era, had a profound impact on Britain,
-                            shaping its economy, society, and politics. The war effort and its aftermath led to
-                            significant
-                            changes in government policies, economic reforms, and social dynamics.
-                        </p>
-                        <p>
-                            The legacy of the Regency era can be seen in its enduring impact on British culture and
-                            history.
-                            The societal changes of the era, such as the emphasis on elegance, simplicity, and natural
-                            beauty in fashion, continue to influence modern fashion trends. The literary works of
-                            Regency
-                            writers like Jane Austen continue to be celebrated and studied for their portrayal of the
-                            social
-                            customs and relationships of the time, providing valuable insights into the Regency
-                            society's
-                            dynamics.
-
-                        </p>
-                        <p>
-                            In conclusion, the Regency era was a remarkable period in British history, characterized by
-                            elegance, refinement, and societal evolution. It was a time of significant social, cultural,
-                            and
-                            political changes that left a lasting impact on British history and culture. The legacy of
-                            the
-                            Regency era can still be seen today in fashion, literature, and societal norms, making it a
-                            noteworthy chapter in British history.
+                            The Regency era in Austria stands as a captivating period of elegance, cultural flourishing,
+                            and political changes. Under the regency of Archduke Johann, Austria experienced a
+                            renaissance in arts and culture, witnessed the construction of iconic architectural
+                            landmarks, and saw the development of a refined society. Although this era eventually gave
+                            way to further political transformations, its impact on Austrian culture and history is
+                            undeniable. The legacy of the Regency era continues to captivate us, reminding us of a
+                            bygone era of sophistication and enlightenment.
                         </p>
                     </article>
                     <article id="article3" class="article">
-                        <h3>The Regency Era: A Time of Elegance, Romance, and Political Transformation</h3>
-
-                        <p>
-                            The Regency Era, spanning from 1811 to 1820, was a period of significant historical and
-                            cultural
-                            significance in Britain. It was a time marked by political transformations, societal
-                            changes,
-                            and notable cultural contributions. In this article, we will delve into the key aspects of
-                            the
-                            Regency Era and explore its impact on British history.
-                        </p>
-                        <p>
-                            The Regency Era was named after the Prince Regent, who assumed the role of King George IV
-                            during
-                            the period when his father, King George III, was deemed unfit to rule due to mental illness.
-                            The
-                            Prince Regent was known for his extravagant lifestyle, love for the arts, and flamboyant
-                            personality. His reign as the Prince Regent and later as King George IV left a distinct mark
-                            on
-                            the era.
-                        </p>
-
-                        <p>
-                            One of the defining characteristics of the Regency Era was its emphasis on elegance and
-                            refinement in fashion, architecture, and literature. The fashion of the time was marked by
-                            high-waisted, empire-line dresses for women, and tailored coats, waistcoats, and breeches
-                            for
-                            men. Pastel colors, delicate fabrics, and intricate detailing were prominent features of
-                            Regency
-                            fashion, reflecting the societal preference for simplicity and natural beauty.
-
-                        </p>
-
-                        <p>
-                            Literature also flourished during the Regency Era, with notable writers such as Jane Austen,
-                            Lord Byron, and Walter Scott making significant contributions to British literature. Jane
-                            Austen's novels, such as "Pride and Prejudice" and "Sense and Sensibility," are considered
-                            classics of English literature and continue to captivate readers with their witty social
-                            commentary, intricate characterizations, and romantic themes. Lord Byron, known for his
-                            poetic
-                            genius and scandalous personal life, contributed to the Romantic movement in literature and
-                            left
-                            a lasting impact on English poetry. Walter Scott, on the other hand, is often credited with
-                            popularizing the historical novel genre and his works, such as "Ivanhoe," are still revered
-                            for
-                            their rich historical detail and gripping narratives.
-                        </p>
-
-                        <p>
-
-                            The Regency Era was also a time of significant political transformation in Britain. The
-                            Napoleonic Wars, which occurred during this period, had a profound impact on the nation. The
-                            war
-                            effort and its aftermath led to economic challenges, social unrest, and political reforms.
-                            The
-                            industrial revolution was gaining momentum, leading to significant changes in the economy,
-                            urbanization, and social structure. The emergence of political movements, such as the
-                            Luddite
-                            movement, which protested against the mechanization of the textile industry, and the fight
-                            for
-                            political reforms, paved the way for significant changes in the British political landscape.
-                        </p>
-
-                        <p>
-                            In addition to the political and cultural developments, the Regency Era was also known for
-                            its
-                            romanticism and love for leisurely pursuits. Balls, parties, and social gatherings were
-                            popular
-                            pastimes among the upper classes, providing opportunities for romance and courtship. The
-                            concept
-                            of "gentleman" and "lady" with their refined manners, etiquette, and social codes, was
-                            highly
-                            valued during this time.
-                        </p>
-
-                        <p>
-                            The legacy of the Regency Era is still visible in modern-day Britain. The elegance and
-                            refinement of Regency fashion continue to inspire contemporary fashion trends, with
-                            empire-line
-                            dresses and tailored coats still making appearances on runways and red carpets. The literary
-                            works of Austen, Byron, and Scott are still widely read and studied, and their themes of
-                            love,
-                            society, and human nature remain relevant to this day. The political and economic changes
-                            that
-                            occurred during the Regency Era set the stage for subsequent developments in British
-                            history,
-                            shaping the nation's political, social, and economic landscape.
-                        </p>
-
-                        <p>
-                            In conclusion, the Regency Era was a period of significant historical and cultural
-                            significance
-                            in Britain. It was marked by elegance, romance, and political transformation, leaving a
-                            lasting
-                            impact on British history and culture.
-                        </p>
-                    </article>
-                    <article id="article4" class="article">
                         <h3>
                             Contemporary Royalty: A Modern Perspective on Monarchy
                         </h3>
